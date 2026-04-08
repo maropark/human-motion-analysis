@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Shotpath",
+    "slug": "human-motion-analysis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "shotpath",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F3EEE5"
+    },
+    "ios": {
+      "bundleIdentifier": "io.maro.shotpath",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Import a recorded basketball clip so Shotpath can analyze the motion trace.",
+        "NSPhotoLibraryAddUsageDescription": "Save annotated exports of your shot analysis back to Photos."
+      },
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F3EEE5"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Import a recorded basketball clip so Shotpath can analyze the motion trace."
+        }
+      ]
+    ]
+  }
+}
