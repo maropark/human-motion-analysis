@@ -1,0 +1,7 @@
+{
+  "name": "shotpath-analyzer",
+  "version": "1.0.0",
+  "description": "On-device video analysis for basketball shot mechanics via Apple Vision + CoreML",
+  "main": "index.ts",
+  "license": "MIT"
+}
