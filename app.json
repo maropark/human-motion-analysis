@@ -34,10 +34,19 @@
     },
     "plugins": [
       "expo-video",
+      "expo-dev-client",
       [
         "expo-image-picker",
         {
           "photosPermission": "Import a recorded basketball clip so Shotpath can analyze the motion trace."
+        }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Shotpath uses the camera to record your free throw sessions for on-device motion analysis.",
+          "enableMicrophonePermission": false,
+          "enableFrameProcessors": true
         }
       ]
     ]
